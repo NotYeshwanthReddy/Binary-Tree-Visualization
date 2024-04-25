@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Binary Tree Visualization</title>
+    <link rel="stylesheet" type="text/css" href="css/joint.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+
+<div id="controls">
+
+    <div id="common" class="box" style="display: none">
+        <div class="type">
+            <select name="type">
+                <option value="1">Binary Search Tree</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="bst control box" id="bst" >
+        <h1>Binary Search Tree</h>
+        <div class="content"></div>
+    </div>
+</div>
+
+
+<div id="modules" style="display: none;">
+    <div class="paper"></div>
+    <div class="bst-input">
+        <div>
+            <textarea class="data" placeholder="Enter number here"></textarea>
+        </div>
+        <div>
+            <input class="add" type="button" value="Add">
+            <input class="remove" type="button" value="Remove">
+            <input class="clear" type="button" value="clear">
+        </div>
+    </div>
+</div>
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/lodash.min.js"></script>
+<script src="js/lib/backbone.min.js"></script>
+<script src="js/lib/joint.min.js"></script>
+<script src="js/lib/ext.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/tree/BinaryTree.js"></script>
+<script src="js/tree/BST.js"></script>
+<script src="js/graph.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
